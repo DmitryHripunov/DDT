@@ -1,0 +1,21 @@
+@import '_mixin.scss';
+@import '_functions.scss';
+
+@import '_normalize';
+@import '_fonts';
+@import '_global';
+
+// styles
+@import 'aside-nav';
+@import 'animations';
+@import 'header';
+@import 'hero';
+@import 'chart';
+@import 'vote';
+@import 'swiper';
+@import 'about';
+@import 'footer';
+@import 'scheme';
+@import 'breackpoints';
+
+

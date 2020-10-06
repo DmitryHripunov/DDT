@@ -1,0 +1,206 @@
+.about {
+  position: relative;
+  padding-top: vw(165);
+  padding-bottom: vw(95);
+  background:url("../img/jpg/about.jpg") top 260px center/contain no-repeat;
+}
+
+.about__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: vw(220);
+}
+
+.about__header-title {
+  margin: 0;
+  font-family: 'inter-black', sans-serif;
+  font-size: vw(72);
+  line-height: 96.99%;
+  background: url("../img/svg/starWt.svg") left center/30px 27px no-repeat;
+  padding-left: vw(50);
+}
+
+.about__header-desc {
+  margin-top: vw(20);
+  margin-bottom: 0;
+  max-width: vw(640);
+  width: 100%;
+  font-size: vw(24);
+  line-height: 162.99%;
+}
+
+.about__video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: vw(120);
+}
+
+.video {
+  max-width: vw(1340);
+  width: 100%;
+  max-height: vw(570);
+  object-fit: cover;
+}
+
+.video:focus {
+  outline: none;
+}
+
+.video-controller {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.video-controller__btn {
+  cursor: pointer;
+  width: vw(120);
+  height: vw(120);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+}
+
+.about__video-svg {
+  width: 120px;
+  height: 120px;
+}
+
+.video-controller__btn {
+  transition: fill .2s ease-in-out, stroke .2s ease-in-out;
+}
+
+.video-controller__btn:hover .about__video-svg path {
+  fill: var(--brand);
+  transition: fill .2s ease-in-out;
+}
+
+.video-controller__btn:hover .about__video-svg circle {
+  stroke: var(--brand) ;
+  transition: stroke .2s ease-in-out;
+}
+
+.video-contoller--pause {
+  display: none;
+}
+
+.video-controller__bar {
+  display: none;
+  position: absolute;
+  bottom: vw(20);
+  width: vw(300);
+  height: vw(5);
+  background-color: var(--gray-color);
+}
+
+.bar__line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--brand);
+  transition: width 0.3s;
+}
+
+.about-link {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--white-color);
+  padding-bottom: vw(34);
+  margin-bottom: vw(55);
+}
+
+.about-title {
+  margin: 0;
+  font-family: 'inter-bold', sans-serif;
+  font-size: vw(72);
+  line-height: 96.99%;
+  padding-left: vw(50);
+  transition: color .2s ease-in-out;
+}
+
+.about__instagram-link  {
+  // padding-bottom: vw(40);
+}
+
+.about__instagram {
+  margin-bottom: vw(70);
+}
+
+.about__instagram-title {
+  font-family: 'inter-black', sans-serif;
+  background: url("../img/svg/Instagram.svg") left center /24px 24px no-repeat;
+}
+
+.about-svg {
+  width: vw(76);
+  height: vw(68);
+}
+
+.about__instagram-link:hover .about__instagram-title {
+  color: var(--brand);
+  transition: color .2s ease-in-out;
+}
+
+
+.about__instagram-stores-items {
+  margin-bottom: vw(47);
+}
+
+.about__instagram-stores-link {
+  display: block; 
+}
+
+.about__instagram-stores-img {
+  max-height: vw(300);
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-link {
+  margin-bottom: vw(50);
+}
+
+.about__partners-title {
+  font-family: 'inter-black';
+  background: url("../img/svg/Union.svg") left center /28px 28px no-repeat;
+}
+
+.about__partners-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__partners-items {
+  flex: 1 1 25%;
+  min-height: vw(236);
+  border: 2px solid var(--gray-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__partners-radio {
+  background: url("../img/png/sponsor1.png") top vw(70) center/vw(174) vw(88) no-repeat;
+}
+
+.about__partners-artist {
+  background: url("../img/png/sponsor2.png") top vw(70) center/vw(174) vw(88) no-repeat;
+}
+
+.about__partners-age {
+  background: url("../img/png/sponsor3.png") top vw(70) center/vw(174) vw(88) no-repeat;
+}
+
+.about__partners-poster {
+  background: url("../img/png/sponsor4.png") top vw(70) center/vw(174) vw(88) no-repeat;
+}

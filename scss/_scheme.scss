@@ -1,0 +1,74 @@
+.scheme-header {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  .header__nav-list::after {
+    border-color: var(--white-color);
+  }
+
+  .header__nav-items:not(:last-child) {
+    margin-right: vw(85);
+  }
+  
+  .header__nav-list::before {
+    border-color: var(--white-color);
+  }
+
+  .header__nav-items_poster::after {
+    background: url("../img/png/bilet2.png") right center/cover no-repeat;
+  }
+  
+  .header__nav-items_about::after {
+    background: url("../img/png/star.png") right -1px top/cover no-repeat;
+  }
+  
+  .header__nav-items_contacts::after {
+    background: url("../img/png/contacts.png") right center/cover no-repeat;
+  }
+
+  .header__btn {
+    font-size: vw(22);
+    color: var(--white-color);
+    background: url("../img/png/menu.png") left center/vw(24) vw(24) no-repeat;
+    transition: color .2s ease-in-out;
+    &:hover {
+      color: var(--brand);
+      transition: color .2s ease-in-out;
+    }
+  }
+}
+
+.scheme {
+  padding: 70px 0 550px;
+  background: url('../img/jpg/About.jpg') center bottom/contain no-repeat;
+}
+
+.scheme__title {
+  font-family: 'arial-bold';  
+  margin: 40px 0 34px;
+  font-size: 38px;
+}
+
+.scheme__back-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 22px;
+  color: var(--gray-color);
+  transition: color .2s ease-in-out;
+  &:hover {
+    color: var(--white-color);
+    transition: color .2s ease-in-out;
+    .scheme__svg-path {
+      fill: var(--white-color);
+      transition: fill .2s ease-in-out;
+    }
+  }
+}
+
+.scheme__svg-path {
+  fill: var(--gray-color);
+  transition: fill .2s ease-in-out;
+}
+
+.scheme__back-link svg {
+  margin-right: 10px;
+}
